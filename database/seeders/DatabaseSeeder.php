@@ -17,9 +17,10 @@ class DatabaseSeeder extends Seeder
     {
         User::factory()->create([
             'name' => 'admin',
-            'email' => 'admin123',
+            'email' => 'muhammadnurfathan07@gmail.com',
+            'password' => bcrypt('password'),
         ]);
-        
+
         $this->call([
             FinanceSeeder::class,
         ]);
